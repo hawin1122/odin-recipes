@@ -36,7 +36,7 @@ header {
     justify-content: space-between;
     padding: 4rem;
 }
-#about h1 {
+h1 {
     color: var(--color-primary-lightest);
 }
 #about p {
@@ -59,7 +59,7 @@ header {
     }
 }
 
-#recipesSection {
+#recipeCardsSection {
     margin: 4rem auto;
     display: grid;
     grid-template-rows: 3rem 1fr;
@@ -68,7 +68,7 @@ header {
     gap: 4px;
     justify-items: center;
 }
-#recipesSection h2 {
+#recipeCardsSection h2 {
     grid-column: 1/-1;
     color: var(--color-primary);
 }
@@ -123,6 +123,45 @@ header {
 }
 .linkBtn:hover {
     padding: 0.15rem 0.45rem;
+}
+
+
+
+
+
+.summary {
+    display: grid;
+    grid-template-columns: minmax(25rem, 1fr) 30rem;
+    grid-template-rows: 3rem 4rem 2rem 11rem 1fr;
+    padding: 1rem 4rem;
+    column-gap: 1rem;
+}
+.summary img {
+    width: 100%;
+    grid-area: 1/2/-2/-1;
+}
+.summary h2 {
+    grid-row: 3;
+    color: var(--color-primary-lightest);
+}
+.recipeAttributes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-content: start;
+    color: var(--color-primary-lightest);
+}
+.summary p {
+    grid-row: 4;
+    color: var(--color-primary-light);
+}
+.recipeSection {
+    display: flex;
+    padding: 4rem;
+}
+.ingredientsList {
+    background-color: var(--color-primary-light);
+    padding: 1rem 2rem;
+    grid-area: -2/-2/-1/-1;
 }
 
 footer {
