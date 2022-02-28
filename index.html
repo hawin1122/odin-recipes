@@ -1,16 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipes</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>Odin Recipes</h1>
-    <a href="recipes/peanut-sauce-soba-noodle-salad.html">Peanut Sauce Soba Noodle Salad</a>
-    <a href="recipes/soba-noodle-ramen.html">Soba Noodle Ramen</a>
-    <a href="recipes/salmon-soba-noodle-salad.html">Salmon Soba Noodle Salad</a>
-    <a href="recipes/tofu-soba-noodle-stir-fry.html">Tofu Soba Noodle Stir Fry</a>
+    <header>
+        <nav id="navbar">
+            <a id="logo" href="index.html">SOBA</a>
+            <div id="navbarLinks">
+                <a href="#about">About</a>
+                <a href="#recipesSection">Recipes</a>
+                <a href="#ctaSection">Contact</a>
+            </div>
+        </nav>
+        <main id="about">
+            <div>
+                <h1>Buckwheat Noodles</h1>
+                <p>Also known as soba, they are usually made of buckwheat flour and are about as thick as spaghetti.
+                    Soba can come in many different types depending on the ingredients used to make the noodles. Because
+                    using buckwheat flour alone can make these noodles quite brittle, wheat flour can also be combined
+                    to reduce the brittleness. Soba can be used in many different types of recipes and can be served in
+                    a variety of settings.</p>
+                <a class="linkBtn" href="#recipesSection">Find Recipes!</a>
+            </div>
+            <img src="https://cdn.pixabay.com/photo/2015/06/08/14/19/soba-noodles-801660_960_720.jpg"
+                alt="Freshly made buckwheat noodles">
+        </main>
+    </header>
+    <section id="recipesSection">
+        <h2>Soba Recipes</h2>
+        <a class="recipeCard" href="recipes/peanut-sauce-soba-noodle-salad.html">
+            <img class="recipeCardPic" src="recipes/peanut-sauce-soba-noodle-salad.png" alt="">
+            Peanut Sauce Soba Noodle Salad
+        </a>
+        <a class="recipeCard" href="recipes/soba-noodle-ramen.html">
+            <img class="recipeCardPic" src="recipes/soba-noodle-ramen.png" alt="">
+            Soba Noodle Ramen
+        </a>
+        <a class="recipeCard" href="recipes/salmon-soba-noodle-salad.html">
+            <img class="recipeCardPic" src="recipes/salmon-soba-noodle-salad.png" alt="">
+            Salmon Soba Noodle Salad
+        </a>
+        <a class="recipeCard" href="recipes/tofu-soba-noodle-stir-fry.html">
+            <img class="recipeCardPic" src="recipes/tofu-soba-noodle-stir-fry.png" alt="">
+            Tofu Soba Noodle Stir Fry
+        </a>
+    </section>
+    <section id="quoteSection">
+        <i>"This page combines my solutions to the Recipes and Landing Page projects from the Odin Project."</i>
+        <p>-Ha</p>
+    </section>
+    <section id="ctaSection">
+        <div>
+            <h2>Interested in my work?</h2>
+            <p>View my other projects on gitHub!</p>
+        </div>
+        <a class="linkBtn" href="https://github.com/hawin1122">See More!</a>
+    </section>
+    <footer>
+        <p>Webpage by: <a href="https://github.com/hawin1122/odin-recipes">hawin1122</a> </p>
+    </footer>
 </body>
+
 </html>
