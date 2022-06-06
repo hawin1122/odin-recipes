@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Cambria', serif;
+    --color-primary-dark: #82735C;
+    --color-primary: #F1E3D0;
+    --color-primary-light: #FFFFFF;
+    --color-secondary: #ED9121;
+    --color-secondary-light: #F1BA75;
+    --color-tertiary: #3D2B3D;
+}
+
+.container {
+    display: grid;
+    grid-template: 60px 1fr / minmax(200px, 1fr) 1.3fr;
+    height: 100vh;
+}
+
+#navbar {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--color-tertiary);
+    grid-column: span 2;
+    z-index: 1;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: var(--color-primary-light);
+}
+
+#logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+#navbarLinks a {
+    padding: 0.5rem;
+}
+
+#navbarLinks a:hover,
+footer a:hover {
+    color: var(--color-secondary);
+}
+
+#side {
+    grid-area: 2/1;
+    position: relative;
+    background-image: url(chopsticks.jpg);
+    background-position: left;
+    background-size: contain;
+}
+
+h1 {
+    position: absolute;
+    bottom: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 4rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: var(--color-primary-light);
+}
+
+main {
+    grid-area: 2/2;
+    align-self: center;
+    padding: 2rem 0;
+}
+
+#intro p {
+    padding: 1rem 2rem;
+    font-size: 20px;
+}
+
+#inputsSection {
+    display: grid;
+    grid-template: 2rem repeat(6, 2rem) / 1fr 1fr;
+    column-gap: 3rem;
+    background-color: var(--color-primary);
+    padding: 2rem;
+}
+
+h2 {
+    grid-column: span 2;
+    color: var(--color-tertiary);
+}
+
+label {
+    align-self: end;
+}
+
+input {
+    border: 2px solid var(--color-primary-dark);
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 5px 5px 0 0 var(--color-primary-dark);
+}
+
+input:focus {
+    box-shadow: 5px 5px 0 0 var(--color-secondary-light);
+}
+
+.error,
+input:invalid {
+    border: 2px solid var(--color-secondary);
+    box-shadow: 5px 5px 0 0 var(--color-secondary);
+}
+
+#action {
+    padding: 1rem 2rem;
+    justify-self: center;
+}
+
+#action button {
+    font-size: 1rem;
+    letter-spacing: 1px;
+    margin: 1rem 0;
+    padding: 5px 20px;
+    border: 2px solid var(--color-primary-dark);
+    border-radius: 30px;
+    background-color: var(--color-secondary);
+    color: var(--color-primary-light);
+    box-shadow: 4px 4px 0 0 var(--color-primary-dark);
+    cursor: pointer;
+}
+
+#action button:hover {
+    background-color: var(--color-secondary-light);
+}
+
+#action button:active {
+    box-shadow: none;
+    transform: translate(4px, 4px);
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-secondary);
+}
+
+a:hover {
+    color: var(--color-secondary-light)
+}
