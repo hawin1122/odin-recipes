@@ -51,7 +51,7 @@ footer a:hover {
 
 
 
-.intro {
+#intro {
     background-color: var(--color-primary);
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -60,14 +60,14 @@ footer a:hover {
     padding: 8rem 4rem 4rem 4rem;
 }
 
-.intro p {
+#intro p {
     color: var(--color-primary-dark);
     margin: 2rem 0;
     text-align: justify;
     letter-spacing: 0.2px;
 }
 
-.intro a {
+#intro a {
     text-decoration: none;
     letter-spacing: 1px;
     padding: 5px 20px;
@@ -79,17 +79,17 @@ footer a:hover {
     cursor: pointer;
 }
 
-.intro a:hover {
+#intro a:hover {
     background-color: var(--color-secondary);
     color: var(--color-primary-light);
 }
 
-.intro a:active {
+#intro a:active {
     box-shadow: none;
     padding: 4px 18px;
 }
 
-.intro img {
+#intro img {
     grid-column: 2/3;
     width: 100%;
 }
@@ -177,6 +177,7 @@ footer a:hover {
 
 
 .summary {
+    background-color: var(--color-primary);
     display: grid;
     grid-template-columns: minmax(37rem, 1fr) 30rem;
     grid-template-rows: 3rem 4rem 2rem 11rem 1fr;
@@ -222,11 +223,20 @@ footer a:hover {
     color: var(--color-primary-dark);
 }
 
+.instructions ol {
+    margin-left: 2rem;
+}
+
 .ingredientsList {
     background-color: var(--color-primary-light);
     color: var(--color-primary-dark);
     padding: 1rem 2rem;
     grid-area: -2/-2/-1/-1;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0.5rem;
 }
 
 footer {

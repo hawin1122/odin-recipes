@@ -85,6 +85,30 @@ main {
     padding: 2rem;
 }
 
+.name {
+    text-transform: capitalize;
+}
+
+.passwordField {
+    position: relative;
+}
+
+.passwordField input {
+    height: 100%;
+    width: 100%;
+}
+
+.passwordField i {
+    position: absolute;
+    right: 7px;
+    top: 7px;
+}
+
+.passwordField i:hover {
+    color: #ED9121;
+    cursor: pointer;
+}
+
 h2 {
     grid-column: span 2;
     color: var(--color-tertiary);
@@ -105,8 +129,7 @@ input:focus {
     box-shadow: 5px 5px 0 0 var(--color-secondary-light);
 }
 
-.error,
-input:invalid {
+.error {
     border: 2px solid var(--color-secondary);
     box-shadow: 5px 5px 0 0 var(--color-secondary);
 }

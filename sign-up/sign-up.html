@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
     <link rel="stylesheet" href="sign-up.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
@@ -14,7 +15,7 @@
         <nav id="navbar">
             <a id="logo" href="../index.html">SOBA</a>
             <div id="navbarLinks">
-                <a href="../index.html#about">About</a>
+                <a href="../index.html#intro">About</a>
                 <a href="../index.html#recipeCardsSection">Recipes</a>
                 <a href="sign-up.html">Sign Up</a>
             </div>
@@ -33,16 +34,23 @@
                     <h2>Let's do this!</h2>
                     <label for="firstName">First Name</label>
                     <label for="lastName">Last Name</label>
-                    <input type="text" name="firstName" id="firstName">
-                    <input type="text" name="lastName" id="lastName">
+                    <input type="text" name="firstName" id="firstName" class="name" required>
+                    <input type="text" name="lastName" id="lastName" class="name">
                     <label for="email">Email</label>
                     <label for="tel">Phone Number</label>
                     <input type="email" name="email" id="email">
-                    <input type="tel" name="tel" id="tel">
+                    <input type="tel" name="tel" id="tel" maxlength="16">
                     <label for="password">Password</label>
                     <label for="confirmPassword">Confirm Password</label>
-                    <input type="password" name="password" id="password">
-                    <input type="password" name="confirmPassword" id="confirmPW">
+                    <div class="passwordField">
+                        <input type="password" name="password" id="password" required>
+                        <i class='bx bx-hide'></i>
+                    </div>
+                    <div class="passwordField">
+                        <input type="password" name="confirmPassword" id="confirmPassword" required>
+                        <i class='bx bx-hide'></i>
+                    </div>
+
                 </section>
                 <section id="action">
                     <button>Create Account</button>
